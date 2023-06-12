@@ -17,7 +17,7 @@ jobs:
           TRAVIS_OS_NAME: linux
           PYTHON: ${{ matrix.python }}
         run: |
-          bash /project/.github/workflows/deploy.sh
+          bash .github/workflows/deploy.sh
       - name: Upload wheels
         uses: actions/upload-artifact@v2
         with:
